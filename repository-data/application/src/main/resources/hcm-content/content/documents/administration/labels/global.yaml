@@ -1,0 +1,20 @@
+/content/documents/administration/labels/global:
+  jcr:primaryType: hippo:handle
+  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+  jcr:uuid: 54207010-16ba-4ec7-ac66-4622e38dfc78
+  hippo:name: Global
+  /global:
+    jcr:primaryType: resourcebundle:resourcebundle
+    jcr:mixinTypes: ['mix:referenceable']
+    jcr:uuid: 9edd9975-828b-47e2-ad4c-4969aa505198
+    hippo:availability: [live, preview]
+    hippostd:state: published
+    hippostdpubwf:createdBy: admin
+    hippostdpubwf:creationDate: 2014-08-21T22:10:13.443+02:00
+    hippostdpubwf:lastModificationDate: 2014-08-21T22:10:52.812+02:00
+    hippostdpubwf:lastModifiedBy: admin
+    hippostdpubwf:publicationDate: 2014-08-21T22:10:54.657+02:00
+    resourcebundle:descriptions: [Text shown in the global page footer.]
+    resourcebundle:id: essentials.global
+    resourcebundle:keys: [footer.text]
+    resourcebundle:messages: [©2022]

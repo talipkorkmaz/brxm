@@ -1,0 +1,5 @@
+/content/documents/test:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['mix:versionable']
+  jcr:uuid: c8505843-389e-43c9-98a9-caf245231407
+  hippostd:foldertype: [new-document, new-folder]

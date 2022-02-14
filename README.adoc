@@ -1,0 +1,57 @@
+
+
+== Talip Korkmaz Bloomreach Task
+
+[source,shell script]
+----
+mvn clean verify
+mvn -Pcargo.run -Drepo.path=/Users/talipkorkmaz/bloomreach-storage
+----
+
+CMS UI
+http://localhost:8080/cms
+
+admin / admin
+editor / editor
+author / author
+
+http://localhost:8080/site
+
+http://localhost:8080/essentials/
+
+
+== Rebuild
+
+[source,shell script]
+----
+mvn verify
+mvn -Pcargo.run -Drepo.path=/Users/talipkorkmaz/bloomreach-storage
+----
+
+
+https://documentation.bloomreach.com/14/library/concepts/content-repository/jcr-interface.html
+https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/5_Reading.html
+
+
+Provided endpoint examples:
+
+
+
+
+.Servlet Operations
+http://localhost:8080/site/assessment
+http://localhost:8080/site/assessment?q=medusa
+
+.Jax-RS Operations
+http://localhost:8080/site/restservices/api/v1/nodes
+http://localhost:8080/site/restservices/api/v1/nodes?q=medusa
+http://localhost:8080/site/restservices/api/v1/nodes/c580ac64-3874-4717-a6d9-e5ad72080abe
+http://localhost:8080/site/restservices/api/v1/nodes/path/content/documents/myproject/news/2022/02/the-medusa-news
+http://localhost:8080/site/restservices/api/v1/nodes/path/content/documents/myproject/news/2022/02/the-gastropoda-news
+
+
+== TODO
+
+No test is added, servlet,controller and service methods should be verified
+Template pattern is used for not repeating the code and guaranteeing for closing the session
+for each operation custom test will be added later.
